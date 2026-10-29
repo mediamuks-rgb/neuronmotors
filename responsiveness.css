@@ -23,4 +23,12 @@ width:100%;
 max-width:100%;
 }
 @media (max-width:768px){
-.card:}
+.card,.box{
+  width:95% !important;
+  margin:10px auto !important;
+}
+  h1{font-size:22px;}
+  h2{font-size:18px;}
+  table{display:block;overflow-x auto;}
+}
+    
