@@ -110,7 +110,30 @@ color: white; }
         <h3></h3>
         <p></p>
         <P class="price">$25,000</P>
-    </div> 
+    </div>
+    <script>
+  // This JavaScript makes your work seen clearly on every page
+  document.body.style.backgroundColor = "white";
+  
+  // Make all text dark and readable
+  let allText = document.querySelectorAll("p, h1, h2, h3, li");
+  allText.forEach(t => {
+    t.style.color = "#222";
+  });
+
+  // Make service boxes extended and clear
+  let boxes = document.querySelectorAll(".box");
+  boxes.forEach(b => {
+    b.style.backgroundColor = "white";
+    b.style.color = "#222";
+    b.style.width = "90%";
+    b.style.margin = "15px auto";
+    b.style.padding = "20px";
+    b.style.display = "block";
+    b.style.borderLeft = "8px solid #0000a0";
+    b.style.boxShadow = "0 4px 10px rgba(0,0,0,0.3)";
+  });
+</script>
     
 </body>
 </html>
