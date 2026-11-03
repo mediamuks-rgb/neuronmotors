@@ -157,12 +157,7 @@ footer {
                     <p><strong>TOLL FREE:</strong>00842246350</p>
                     <P>Contact Us for inquiries, support,or more info.</P>
                 </section>
-               <form action="https://api.web3forms.com/submit" method="POST">
-                   <input type="hidden" name="access_key" value="PASTE YOUR KEY HERE">
-                   <input type="hidden" name="subject" value="New Message From Neuron Motors Website">
-                   <input type="hidden" name="redirect" value="https://mediamuks-rgb.github.io/neuronmotors/thankyou.html">
-                   <input type="checkbox" name="botcheck" style="display:none">
-  
+               <form id="contactForm">
   <label>Full Name</label>
   <input type="text" name="name" placeholder="Enter your name" required>
 
@@ -170,9 +165,17 @@ footer {
   <input type="email" name="email" placeholder="Enter your email" required>
 
   <label>Your message</label>
-  <textarea name="message" placeholder="enter your message here..." required></textarea>
-  <button type="submit">send message</button>
+  <textarea name="message" placeholder="Enter your message here..." required></textarea>
+
+  <button type="submit">Send Message</button>
 </form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  window.location.href = "thankyou.html";
+});
+</script>
                 </section>
             </main>
             <footer>
